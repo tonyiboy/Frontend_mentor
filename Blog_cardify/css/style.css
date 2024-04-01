@@ -1,0 +1,98 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* variables */
+:root {
+    --body-bg: hsl(47, 88%, 63%);
+    --card-bg: hsl(0, 0%, 100%);
+    --span-a-h2-color: hsl(0, 0%, 7%);
+    --para-color: hsl(0, 0%, 50%); 
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-bg);
+    font-family: Figtree;
+} 
+
+ .card {
+    background-color: var(--card-bg);
+    padding: 1.5625rem;
+    border-radius: 1rem;
+    width: 26.66%;
+    min-width: 20.4375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    border: 1px solid black;
+    box-shadow: 6px 6px 0px 1px #000000;
+}
+
+.card:hover {
+    box-shadow: 9px 9px 0px 1px #000000;
+}
+
+.my-image { 
+    width: 100%;
+    border-radius: 0.7rem;
+    height: auto;
+}   
+
+/* section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+a {
+    align-self: flex-start;
+    text-decoration: none;
+    background-color: var(--body-bg);
+    color: var(--span-a-h2-color);
+    font-weight: 900;
+    padding: 0.5rem;
+    border-radius: 0.3em;
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+h1:hover {
+    color: var(--body-bg);
+    cursor: pointer;
+}
+
+span {
+    font-weight: 500;
+}
+
+p {
+    color: var(--para-color);
+    font-weight: 500;
+    font-size: 0.88rem;
+}
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-photo {
+    width: 2rem;
+    height: 2rem;
+} 
