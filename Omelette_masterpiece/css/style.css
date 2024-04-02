@@ -1,0 +1,231 @@
+/*****RESET*****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    /* PRIMARY colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%); 
+
+    /* NEUTRAL colors */
+    --eggshell: hsl(30, 54%, 90%);
+    --white: hsl(0, 0%, 100%);   
+    --rose-white: hsl(330, 100%, 98%);  
+    --dark-charcoal: hsl(24, 5%, 18%);                   
+    --light-grey: hsl(30, 18%, 87%);             
+    --wenge-brown: hsl(30, 10%, 34%);            
+    
+    --background-body: var(--eggshell);
+    --background-card: var(--white);
+    --background-preparation: var(--rose-white);
+    --color-preparation-marker-and-h3: var(--dark-raspberry);
+    --color-ingredients-marker-and-h2: var(--nutmeg);
+    --color-h1: var(--dark-charcoal);
+    --color-text: var(--wenge-brown);
+    --table-border: var(--light-grey);
+}
+
+/******BODY AND CARD*****/
+body {
+    background-color: var(--background-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+} 
+
+.card {
+    background-color: var(--background-card);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: 51%;
+    max-width: 45rem;
+}
+
+/**********MAIN**********/
+img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 1rem;
+} 
+
+h1 {
+    margin: 1.3rem 0 1.3rem;
+    font-size: 2.5rem; 
+    color: var(--color-h1);  
+    font-weight: 400;
+    font-family: "Young Serif";
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2.125rem;
+    color: var(--color-text);
+    font-family: Outfit;
+    font-weight: 400;
+}
+
+/**********preparation**********/
+h3 {
+    color: var(--color-preparation-marker-and-h3);   
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+.preparation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background-preparation);
+    padding: 1.875em;
+    font-family: Outfit;
+    border-radius: 1em;
+}
+
+.preparation-list {
+   padding-left: 1.4em;
+}
+
+.preparation-list li {
+    font-size: 1rem;
+    color: var(--color-text);
+    padding-left: 1em;
+}
+
+.preparation-li {
+    margin-bottom: 0.52em;
+}
+
+.preparation-list li::marker {
+    color: var(--color-preparation-marker-and-h3);   
+}
+
+span {
+    font-weight: 700;
+}
+
+/**********ingredients**********/
+.ingredients, .instructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 0.100em solid var(--table-border);
+    margin-top: 2em;    
+    padding-bottom: 2.0625em;
+}
+
+h2 {
+    color: var(--color-ingredients-marker-and-h2);
+    font-size: 1.7rem;
+    font-family: "Young Serif";
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients-list {
+    padding-left: 1.7em;
+}
+
+.ingredients-list li {
+    font-family: Outfit;
+    padding-left: 1.1em; 
+    color: var(--color-text);      
+}
+
+.ingredients-li {
+    margin-bottom: 0.5631em;
+}
+
+.ingredients-list li::marker {
+    color: var(--color-ingredients-marker-and-h2);
+}
+
+/**********instructions**********/
+.instructions h2 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.instructions-list {
+    font-family: Outfit;
+    font-weight: 400;
+    padding-inline: 1.5em;
+}
+
+.instructions-list li {
+    padding-left: 1rem;
+    color: var(--color-text);
+    line-height: 1.4;  
+}
+
+.instructions-li {
+    margin-bottom: 0.58rem;
+} 
+
+.instructions-list li::marker {
+    color: var(--color-ingredients-marker-and-h2);
+    font-weight: 600;
+}
+
+/************nutrition***********/
+.nutrition h2 {
+    margin-top: 2rem;
+}
+
+td:last-child {
+    font-weight: 700;
+    color: var(--color-ingredients-marker-and-h2);
+    padding-left: 4.7em;   
+}
+
+td:first-child {
+    color: var(--color-text);
+    font-weight: 400;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%;
+    font-family: Outfit;
+}   
+
+table tr:nth-last-child(n+2) {
+    border-bottom: 0.100em solid var(--table-border);
+} 
+
+.td-border {
+    padding-bottom: 0.7rem;
+}
+
+td {
+    padding-top: 0.7rem;
+}
+
+.td-first {
+    padding-top: 0;
+}
+
+td:first-child {
+    width: 40%;
+    padding-left: 2em;
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1.3rem;
+    }
+
+}
