@@ -1,0 +1,158 @@
+/* small reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* declaring variables */
+
+:root {
+    --dark_cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --very_dark_blue: hsl(212, 21%, 14%);
+    --dark_grayish_blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* declaring font-size */
+html {
+    font-size: 14px;
+}
+
+body {
+    padding: 1.85em 1.17em;
+    background-color: var(--cream);
+    height: 100vh;
+}
+
+/* card */
+.card {
+    margin: auto;
+    max-width: 24.42rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 0.8em;
+    overflow: hidden;
+}
+
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* text content part */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1.71em;
+    margin: 2em 0;
+}
+
+span,p {
+    font-family: Montserrat;
+}
+
+.text-content > span {
+    color: var(--dark_grayish_blue);
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: Fraunces;
+    font-weight: 700;
+}
+
+p {
+    color: var(--dark_grayish_blue);
+    font-size: 1.02rem;
+    line-height: 1.5;
+}
+
+/* prices */
+div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.8em;
+}
+
+div span:first-child {
+    color: var(--dark_cyan);
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+span + span {
+    color: var(--dark_grayish_blue);
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    margin-top: 0.2em;
+}
+
+/* button and image */
+button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark_cyan);
+    color: var(--white);
+    padding: 1em 0;
+    border-radius: 0.5em;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: Montserrat;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+button img {
+    margin: 0.2em 1em 0 0;
+}
+
+
+/* media query */
+
+@media screen and (min-width: 800px) {
+    
+    .card {
+        flex-direction: row;
+        max-width: 43rem;
+    }
+
+    body {
+        padding: 12.35em 1.17em;
+    }
+
+    h1 {
+        width: 10ch;
+        font-size: 2.2rem;
+    }
+
+    p {
+        width: 25ch;
+    }
+
+   .text-content {
+    flex-basis: 550px;
+   }
+
+   button {
+        margin-top: 2.1rem;
+   }
+   
+}
