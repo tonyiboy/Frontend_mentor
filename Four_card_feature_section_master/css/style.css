@@ -1,0 +1,133 @@
+/* small reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+ 
+/* variables */
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%); 
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-family: poppins;
+}
+
+/********************/
+/*******HEADER*******/
+/********************/
+header {
+    min-width: 20rem; 
+    padding: 5.5rem 1.43rem 5.3rem;
+}
+
+h1,p {
+    color: var(--grayish-blue);
+}
+
+h2,span {
+    color: var(--very-dark-blue);
+}
+
+h1 {
+    font-size: clamp(1.59rem, 7vw, 2.4rem);
+    color: var(--grayish-blue);
+    font-weight: 400;
+    margin-bottom: 0.8em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+span {
+    font-size: clamp(1.65rem, 7.3vw, 2.5rem);
+    font-weight: 600;
+    display: block;
+}
+
+header p {
+    font-size: 1.1rem;
+    text-align: center;
+    width: clamp(32ch, 95%, 55ch);
+    margin: auto;
+}
+
+/********************/
+/********MAIN********/
+/********************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main p {
+    font-size: 0.85rem;
+    margin: 0.6em 0 1em              ;
+}
+
+section {
+    border-radius: 0.5rem;
+    padding: 1.6em;
+    background-color: white;
+    width: 20rem;
+    margin: auto;
+    box-shadow: 0px 4px 10px 1px var(--grayish-blue);
+}
+
+img {
+    margin-left: 12rem;
+}
+
+.card-one {
+    border-top: 5px solid var(--cyan);
+}
+
+.card-two {
+    border-top: 5px solid var(--red);
+}
+
+.card-three {
+    border-top: 5px solid var(--orange );
+}
+ 
+.card-four {
+    border-top: 5px solid var(--blue);
+}
+
+@media screen and (min-width: 1000px) {
+
+    header p {
+        font-size: 1rem;
+    }
+    
+    main {
+        flex-direction: row;
+        width: 75.33rem;
+        margin: auto;
+    }
+
+    section {
+        width: 23rem;
+    }
+
+}
