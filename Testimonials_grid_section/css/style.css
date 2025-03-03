@@ -1,0 +1,174 @@
+/* small reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 13px;
+}
+
+/********** variables **********/
+
+:root {
+
+/* primary colors */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+        
+/* neutral colors */
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --light-gray: hsl(0, 0%, 81%);
+
+/* linked colors */
+    --card-one: var(--moderate-violet);
+    --card-two: var(--very-dark-grayish-blue);
+    --card-three-five: var(--white);
+    --card-four: var(--very-dark-blackish-blue);
+}
+
+/* global items*/
+
+body {
+    font-family: "Barlow Semi Condensed";
+    background-color: var(--light-grayish-blue);
+}
+
+main {
+    padding:5.3rem 1.846rem 0 1.846rem ;
+    max-width: 85.7rem;
+    margin: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+}
+
+img {
+    border-radius: 50%;
+    width: 2.307rem;
+}
+
+span {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.names {
+    color:var(--light-gray)
+}
+
+.graduate-status {
+    --light-gray: hsla(0, 0%, 81%,50%);
+    color: var(--light-gray);
+}
+
+h2{
+    color: var(--light-grayish-blue);
+    font-weight: 600;
+}
+
+p {
+    --light-gray: hsla(0, 0%, 81%,70%);
+    color: var(--light-gray);
+    font-weight: 500;
+}
+
+section {
+    border-radius: 0.5rem;
+    padding: 1.846rem 2.307rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.846rem;
+}
+
+.card-three .names,
+.card-three h2,
+.card-five .names,
+.card-five h2 {
+    color: var(--very-dark-grayish-blue);
+}
+
+.card-three .graduate-status,
+.card-three p,
+.card-five .graduate-status,
+.card-five p {
+    --very-dark-grayish-blue: hsla(217, 19%, 35%, 50%);
+    color: var(--very-dark-grayish-blue);
+}
+
+/********** CARD ONE **********/
+
+.card-one {
+    background-color: var(--card-one);
+    grid-area: one;
+    background-image: url(../img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right calc(5% + 2vw);
+}
+
+.person {
+    display: flex;
+    gap: 1.153rem;
+}
+
+.info-person {
+    display: flex;
+    flex-direction: column;
+}
+
+/********** CARD TWO **********/
+
+.card-two {
+    background-color: var(--card-two);
+    grid-area: two;
+
+}
+
+/********** CARD THREE ********/
+
+.card-three {
+    background-color: var(--card-three-five);
+    grid-area: three;
+
+}
+
+/********** CARD FOUR *********/
+
+.card-four {
+    background-color: var(--card-four);
+    grid-area: four;
+
+}
+
+/********** CARD FIVE *********/
+
+.card-five {
+    background-color: var(--card-three-five);
+    grid-area: five;
+
+}
+
+@media (min-width:45em) {
+    main {
+        grid-template-areas: 
+        "one one one two two two"
+        "three three four four five five";
+    }
+}
+
+@media (min-width:65em) {
+    main {
+        grid-template-areas: 
+        "one  one two five"
+        "three four four five";
+    }
+}
