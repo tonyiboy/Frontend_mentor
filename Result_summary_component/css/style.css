@@ -1,0 +1,237 @@
+
+/* Weights: 500, 700, 800  */
+/* small reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    
+    /* Primary */
+    
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+/* Gradients */
+
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+/* Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/********** global setup **********/
+/********** global setup **********/
+/********** global setup **********/
+
+body {
+    font-size: 18px;
+    font-family: "Hanken Grotesk";
+    height: 100vh;
+    background-color: hsl(241, 100%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 46.3rem
+}
+
+/********** card one items **********/
+/********** card one items **********/
+/********** card one items **********/
+
+/* card one */
+
+.card-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) );
+    padding: 1.5rem 3.333rem 2.333rem;
+    border-radius: 0 0 1.8rem 1.8rem;
+    flex: 1;
+}
+
+/* card one title */
+.card-one h2 {
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* result */
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+
+.score {
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+
+}
+
+.total-score {
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%,40%);
+    font-weight: 500;
+}
+
+/* score title */
+
+.score-title {
+    color: hsl(221, 100%, 96%);
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+/* description score */
+
+p {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 15rem;
+    max-width: 16rem;
+}
+/********** card two items **********/
+/********** card two items **********/
+/********** card two items **********/
+
+/* card two */
+.card-two {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    gap: 1.333rem;
+    flex: 1;
+}
+
+/* card two title */
+
+.card-two h2{
+    color: hsl(224, 30%, 27%);
+    font-size: 1.2rem;
+}
+
+/* reaction, memory,  verbal, visual groups */
+.card-two div {
+    display: flex;
+    gap: 1rem;
+    padding: 1.1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-two span {
+    margin-left: auto;
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+}
+
+.card-two .bold-score {
+    color: hsla(224, 30%, 27%,90%);
+    font-weight: 700;
+}
+
+/* reaction */
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%,5%);
+}
+
+/* memory */
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%,5%);
+}
+
+/* verbal */
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%,5%);
+}
+
+/* visual */
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%,5%);
+}
+
+/* button */
+
+button {
+    padding: 1.2rem 0.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) );
+}
+
+
+/* media */
+
+@media (min-width: 45em) {
+   
+    .wrapper {
+        display: flex;
+        border-radius: 1.8rem;
+    }
+
+    .card-one {
+        border-radius: 1.8rem;
+    }
+
+    .result {
+        padding: 3rem 4rem;
+    }
+
+    .score-title {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+}
+
