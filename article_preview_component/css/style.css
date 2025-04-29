@@ -1,0 +1,177 @@
+/* SMALL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+/* SETTING FONT AND SIZE */
+
+html {
+    font-size: 13px;
+    font-family: Manrope;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 2em; 
+    height: 100vh;
+    background-color: var(--light-grayish-blue);   
+}
+
+/*********************/
+/********DIV*********/
+/*********************/
+
+.card {
+    width: 26rem;
+    background-color:white;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+
+.card > img {
+    width: 100%;
+    height: 15em;
+}
+
+/*********************/
+/********MAIN*********/
+/*********************/
+
+main {
+    padding: 0 2.53em;
+}
+
+h1 {
+    color: var(--very-dark-grayish-blue);
+    margin: 2.56em 0 1.69em ;
+    font-size: 1.2rem;
+}
+
+main > p {
+    color: var(--desaturated-dark-blue);
+    margin-bottom: 1.5em;
+    font-size: 1.01rem;
+    font-weight: 500;
+}
+
+/*********************/
+/*******FOOTER********/
+/*********************/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9em 0;
+    position: relative;
+}
+
+footer img:first-child {
+    width: 2.8rem;
+    height: 2.8rem; 
+    border-radius: 50%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: var(--grayish-blue);
+    border-radius: 50%;  
+}
+
+footer p {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 1em;
+}
+
+p span:first-child {
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+}
+
+p span:last-child {
+    color: var(--grayish-blue);
+}
+
+/*********************/
+/****HOVER CONTENT****/
+/*********************/
+
+.back-info {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    position: absolute;
+    background-color: var(--very-dark-grayish-blue);
+    z-index: 1;
+    width: 25.07rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    display: none;
+}
+
+a {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    text-decoration-line: none;
+    letter-spacing: 0.3em;
+    margin-left: 2.53em;
+}
+
+.social-link {
+    display: flex;
+    gap: 1em;
+}
+
+.back-info .image {
+    margin-left: 5rem;
+}
+
+@media (min-width: 40em) {
+    
+    .card {
+        display: flex;
+        overflow: visible;
+        width: 56rem;
+    }
+
+    .card > img {
+        height: 19em;
+    }
+
+   .back-info {
+    transform: translate(20% ,-90%);
+    border-radius: 1em;
+    width: 18em;
+    
+
+        
+   }
+
+   .back-info .image {
+    display: none;
+   }
+
+}
+
+
