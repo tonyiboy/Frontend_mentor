@@ -1,0 +1,229 @@
+ /* Weights: 300, 600, 700 */
+
+ /* small reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+/* global style */
+ html {
+    font: 20px "Libre Franklin"
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    gap: 1.5rem;
+    width: 75%;
+    max-width: 32rem;
+}
+
+/********** items style **********/
+/********** items style **********/
+/********** items style **********/
+
+.info-launching {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* h1 title */
+h1 {
+    color: #929292;
+    font-weight: 300;
+    font-size: 2.25rem;
+}
+
+/* span inside of h1 */
+h1 span {
+    color: #0D1520;
+    font-weight: 700;
+}
+
+/* subscribe and notified text */
+.info-launching > span {
+    color: #323337;
+    font-size: 1.25rem;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+/* iput */
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input {
+    padding: 1.1rem 0 1.1rem 3rem;
+    border: 3px solid #CBD3EA;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    width: 100%;
+    color: #343539;
+}
+
+input::placeholder {
+    color: #C6CCDC;
+}
+
+/* paragraph */
+p { 
+    display: none;
+}
+
+/* button */
+button {
+    background-color: #4D7BF3;
+    color: #FFFEFC;
+    border: none;
+    align-self: stretch;
+    padding: 1.25rem 0;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #F7FFFF;
+    background-color: #7294F5;
+}
+
+/* img */
+img {
+    margin-top: 4rem;
+}
+
+/* svg wrapper */
+.icons-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* svg */
+.icons-wrapper svg {
+    width: 3.5rem;
+    fill: #4D7DF1;
+    border: 3px solid #EAEDF6;
+    padding: 0.7rem;
+    border-radius: 2rem;
+}
+
+.icons-wrapper svg:hover {
+    cursor: pointer;
+    background-color: #4A7AF1;
+    fill: #FFFFFE;
+
+}
+
+/* footer */
+footer {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* footer span */
+footer span {
+    color: #ADADAD;
+    font-size: 1rem;
+}
+
+/********** active state **********/
+/********** active state **********/
+/********** active state **********/
+
+.error-msg {
+    color: #C56978;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.error-input-border {
+    border: 3px solid #E56272;
+}
+
+/********** media query style **********/
+/********** media query style **********/
+/********** media query style **********/
+
+@media (min-width:50em) {
+
+    main {
+        padding-top: 4rem;
+        gap: 2rem;
+    }
+
+    .info-launching {
+        gap: 1rem;
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    .input-wrapper {
+        flex-grow: 1;
+    }
+
+    input {
+        padding: 0.6rem 0 0.6rem 2rem;   
+    }
+
+    button {
+        align-self: flex-start;
+        padding: 0.73rem 2rem;
+    }
+
+    img {
+        margin-top: 1rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .icons-wrapper {
+        gap: 0.5rem;
+    }
+
+    .icons-wrapper svg {
+        width: 1.5rem;
+        padding: 0.3rem;
+        border-radius: 2rem;
+    }
+
+    footer span {
+        font-size: 0.6rem;
+    }
+}
