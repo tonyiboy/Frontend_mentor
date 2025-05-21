@@ -1,0 +1,224 @@
+/* small reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global settings */
+
+html {
+    font: 16px Poppins;
+}
+
+body {
+    background-image: url(../img/bg-intro-mobile.png);
+    background-color: #FF7978;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 6em 0 0 0 ;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+/********** first section **********/
+/********** first section **********/
+/********** first section **********/
+
+
+/* section */
+.content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 31.5rem;
+}
+
+/* h1 */
+h1 {
+    color: white;
+    text-align: center; 
+}
+
+/* paragraph */
+.content-info p {
+    color: #FFF4EF;
+    text-align: center;
+}
+
+/********** second section **********/
+/********** second section **********/
+/********** second section **********/
+
+/* section */
+.form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 34rem;
+}
+
+/* paragraph */
+.form-price {
+    color: #F9F9FF;
+    background-color: #5D54A3;
+    text-align: center;
+    line-height: 1.6;
+    padding: 1.25em 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 9px 0px 0px rgba(0,0,0,0.1)
+}
+
+/* span in paragraph */
+.form-price span {
+    color: #FEFCFF;
+    font-weight: 700;
+}
+
+/* form */
+form {
+    padding: 1rem;  
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0px 9px 0px 0px rgba(219,103,103,0.52);
+}
+
+/* input */
+.input-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input {
+    padding: 1.25em;
+    border: 2px solid #DDDDDD;
+    border-radius: 0.5em;
+    flex: 1;
+    width: 100%;
+    color: #48484A;
+}
+
+.hidden-error-text {
+    display: none;
+}
+
+.hidden-svg {
+    display: none;
+}
+
+/* placeholder */
+input::placeholder {
+    color: #7B7B7D;
+    font-weight: 600;
+}
+
+/* button */
+button {
+    background-color: #37CC8A;
+    color: #D1FFEF;
+    border: none;
+    text-transform: uppercase;
+    padding: 1.3em 0 ;
+    border-radius: 0.5em;
+    font-weight: 700;
+    box-shadow: 0px 7px 0px 0px rgba(48,186,126,0.8);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #77E2B4;
+    color: #E6FFF9;
+    box-shadow: 0px 7px 0px 0px rgba(48,186,126,0.5);
+}
+
+/* paragraph in form */
+form p {
+    color: #B8B7BD;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0 1.7em;
+}
+
+/* span in paragraph in form */
+form p span {
+    color: #ED9F9B;
+    font-weight: 600;
+}
+
+/********** active state **********/
+/********** active state **********/
+/********** active state **********/
+
+.error-msg {
+    border: 2px solid #CB8F8E;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    border-radius: 0.5em;
+}
+
+.error-input {
+    border: none;
+}
+
+.active-error-text {
+    align-self: flex-end;
+    color: #DC9196;
+    font-size: 0.7rem;
+    font-style: italic;
+    padding: 0;
+}
+
+/********** media query style **********/
+/********** media query style **********/
+/********** media query style **********/
+
+@media (min-width: 82em) {
+
+body {
+    background-image: url(../img/bg-intro-desktop.png);
+}
+
+/* global settings */
+main {
+    flex-direction: row;
+    }
+
+/********** first section **********/
+
+h1 {
+    text-align: left;
+    line-height: 1.3;
+    font-size: 2.5rem;
+}
+
+.content-info p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* form */
+
+form {
+    padding: 2rem;
+    gap: 1.6rem;
+}
+
+button {
+    font-size: 1rem;
+}
+
+}
