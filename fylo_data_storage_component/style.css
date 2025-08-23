@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Raleway";
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 24px;
+    background-image: url(./img/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/********** CARD ONE **********/
+/********** CARD ONE **********/
+/********** CARD ONE **********/
+.card-one {
+    width: 100%;
+    padding: 40px;
+    background-color: #1E2D69;
+    border-radius: 10px 100px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 350px;
+}
+
+.logo-wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.logo-wrapper > div {
+    background-color: #0C122C;
+    border-radius: 10px;
+}
+
+.wrapper-document {
+    padding: 10px 14px;
+}
+
+.wrapper-folder {
+    padding: 12px 12px;
+}
+
+.wrapper-upload {
+    padding: 14px 12px;
+}
+
+/********** CARD TWO **********/
+/********** CARD TWO **********/
+/********** CARD TWO **********/
+.card-two {
+    width: 100%;
+    background-color: #1E2D69;
+    border-radius: 10px;
+    padding-inline: 32px;
+    max-width: 540px;
+}
+
+/* using this wrapper for position relative */
+.card-two-info-wrapper {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* card-content */
+/* card-content */
+/* card-content */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* p + span style inside card-content*/
+p {
+    color: #DBD9FF;
+    line-height: 115%;
+    text-align: center;
+}
+
+p span {
+    font-weight: bold;
+}
+
+/* storage info style inside card content */
+.storage-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.storage-color {
+    background-color: #0F1B3D;
+    border-radius: 10px;
+    padding: 3px 3px;
+}
+
+.storage-value {
+    width: 75%;
+    padding: 7px 0px;
+    border-radius: 8px;
+    background-image: linear-gradient(90.00deg, rgba(255, 161, 151, 1),rgba(255, 74, 149, 1) 100%);
+    position: relative;
+}
+
+.storage-value::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    padding: 5px;
+    right: 2px;
+    top: 2px;
+    border-radius: 1rem;
+}
+
+/* storage size */
+.storage-size {
+    display: flex;
+    justify-content: space-between;
+    color: #DBD9FF;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* storage remaining wrapper */
+.storage-remaining {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 26.5px;
+    align-self: center;
+}
+
+.storage-remaining :first-child {
+    color: #0C122C;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.storage-remaining :last-child {
+    color: #0C122C;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    line-height: 115%;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+/* tablet version */
+@media (min-width: 768px) {
+
+   body {
+    background-color: #0C122C;
+    background-image: url(./img/bg-desktop.png);
+    background-size: contain;
+    background-position: bottom;
+   }
+
+   p {
+    text-align: left;
+   }
+
+}
+
+/* desktop version */
+@media (min-width: 1440px) {
+   
+    .wrapper {
+        flex-direction: row;
+        max-width: 922px;
+        gap: 32px;
+    }
+
+    .card-two {
+        align-self: end;
+        padding-bottom: 80px;
+    }
+
+    .storage-remaining {
+        position: absolute;
+        top: -80px;
+        right: 0;
+    }
+
+    .storage-remaining::after {
+        content: "";
+        display: block;
+        border-right: 20px solid white;
+        border-top: 20px solid white;
+        border-left: 20xp solid transparent;
+        border-bottom: 20px solid transparent;
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+
+    }
+
+}
+
