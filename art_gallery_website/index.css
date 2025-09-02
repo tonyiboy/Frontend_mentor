@@ -1,0 +1,432 @@
+/* global settings */
+
+@font-face {
+    font-family: "outfit";
+    src: url(./fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "big shoulders";
+    src: url(./fonts/big_shoulders/BigShoulders-VariableFont_opsz\,wght.ttf) format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/********** HEADER **********/
+/********** HEADER **********/
+/********** HEADER **********/
+
+header {    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 23.4375rem;
+    margin: auto;
+}
+
+/* many pictures wrapper */
+picture {
+    margin: auto;
+}
+
+/* wrapper for title paragraph a link and svg */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 1rem;
+}
+
+/* title */
+.title {
+    font-family: "big shoulders";
+    color: #151515;
+    font-size: 3.75rem;
+    line-height: 90%;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-right: 3.5rem;
+}
+
+/* wrapper for paragraph and link and svg */
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* paragraph text */
+.header-description {
+    font-family: outfit;
+    color: #444444;
+    font-size: 1.125rem;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+/* link and svg wrapper */
+.location {
+    display: flex;
+}
+
+/* link to location page */
+.location a {
+    background-color: #151515;
+    color: white;
+    text-decoration: none;
+    font-family: "big shoulders";
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.2275rem;
+    padding: 1.3em 1.675em;
+    text-transform: uppercase;
+
+}
+
+/* svg wrapper */
+.location-svg-wrapper {
+    background-color: #D5966C;
+    padding: 1.5em;      
+}
+
+/* svg */
+svg {
+    display: block;
+}
+
+/********** MAIN **********/
+/********** MAIN **********/
+/********** MAIN **********/
+
+main {
+    max-width: 21.4375rem;
+    margin-top: 6.25rem;
+    margin-inline: auto;
+}
+
+/* SECTION ONE */
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-one-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-one-title {
+    color: #151515;
+    font-size: 3.125rem;
+    font-family: "big shoulders";
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 90%;
+}
+
+.section-one-description {
+    color: #444444;
+    font-family: outfit;
+    line-height: 140%;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+/* SECTION TWO */
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.section-two-title {
+    font-family: "big shoulders";
+    font-size: 3.125rem;
+    font-weight: 900;
+    line-height: 90%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.section-two-content {
+    background-color: #151515;
+    padding: 3rem 1.5rem;
+    margin-top: 1rem ;
+}
+
+.section-two-description {
+    font-family: outfit;
+    color: white;
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    line-height: 140%;
+}
+
+/********** FOOTER **********/
+/********** FOOTER **********/
+/********** FOOTER **********/
+footer {
+    background-color: #151515;
+    margin-top: 6.25rem;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-description {
+    font-family: outfit;
+    color: white;
+    font-size: 1.125rem;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+.svgs-wrapper {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.svgs-wrapper svg {
+    fill: #FFF;
+}
+
+/********** HOVER **********/
+/********** HOVER **********/
+/********** HOVER **********/
+.location:hover a {
+    background-color: #D5966C;
+}
+
+.location:hover .location-svg-wrapper {
+    background-color: #151515;
+}
+
+.svgs-wrapper svg:hover {
+   fill: #D5966C;
+}
+
+/********** TABLET VERSION **********/
+/********** TABLET VERSION **********/
+/********** TABLET VERSION **********/
+
+@media (min-width: 768px) {
+
+    /********** HEADER **********/
+    header {
+        flex-direction: row;
+        gap: 0;
+        max-width: 48rem;
+        margin-inline: auto;
+    }
+
+    picture {
+        margin: 0;
+    }
+
+    .hero-container {
+        max-width: 21.1875rem;
+        padding-top: 9.5625rem;
+        margin-left: -3rem;
+        gap: 3rem;
+        padding-inline: 0;
+    }
+
+    .title {
+        font-size: 4.375rem;
+        padding-right: 0.5rem;
+    }
+
+    .header-info {
+        gap: 3rem;
+    }
+
+    /********** MAIN **********/
+
+    main {
+        max-width: 43.0625rem;
+    }
+
+    /* SECTION ONE */
+
+    .first-section {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .first-section picture {
+        order: 1;
+        margin-left: auto;
+    }
+
+    .section-one-content {
+        max-width: 13.9375rem;
+        align-self: center;
+    }
+
+    /* SECTION TWO */
+    
+    .second-section {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0; 
+    }
+
+    .second-section div {
+        max-width: 17.5rem;
+    }
+
+    .section-two-content {
+        padding: 5.5rem 2rem;
+        background-color: #151515;
+    }
+
+    /********** FOOTER **********/
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-content {
+        flex-direction: row;
+        max-width: 28.125rem;
+        gap: 4rem;
+    }
+
+    .footer-content svg {
+        flex-shrink: 0;
+    }
+
+}
+
+/********** DESKTOP VERSION **********/
+/********** DESKTOP VERSION **********/
+/********** DESKTOP VERSION **********/
+
+@media (min-width: 1440px) {
+
+    /********** HEADER **********/
+    header {
+        max-width: 90rem;
+        position: relative;
+    }
+
+    header picture {
+        padding-left: 28.125rem;
+        background-color: #151515;   
+    }
+
+    .hero-container {
+        max-width: 21.875rem;
+        margin-left: -4.25rem;
+        padding-top: 15.9375rem;
+    }
+
+    .title {
+        font-size: 6rem;
+        position: absolute;
+        left: 10.3125rem;
+        right: 0;
+        width: 28.5rem;
+        color: white;
+        mix-blend-mode: difference;
+    }
+
+    .header-description {
+        font-size: 1.375rem;
+    }
+
+    /********** MAIN **********/
+
+     main {
+        max-width: 69.375rem;
+        margin-inline: auto;
+    }
+
+    /* SECTION ONE */
+
+    .section-one-content {
+        max-width: 21.875rem;
+        gap: 2rem;
+        line-height: 100%;
+    }
+
+    .section-one-title {
+        font-size: 3.75;
+        padding-right: 2.7rem;
+    }
+
+    .section-one-description {
+        font-size: 1.375rem;
+    }
+
+    /* SECTION TWO */
+
+    .second-section div {
+        max-width: 445px;
+    }
+
+    .section-two-content {
+        margin-top: 2rem;
+        padding: 4.1rem 3rem;
+    }
+
+    .section-two-title {
+        font-size: 3.75rem;
+        line-height: 100%;
+    }
+
+    .section-two-description {
+        margin-top: 2rem;
+        font-size: 1.375rem;
+    }
+
+    /********** FOOTER **********/
+    
+    footer {
+        max-width: 90rem;
+        padding: 5rem 10.3125rem;
+        margin-inline: auto;
+    }
+
+    .footer-content {
+        width: 100%;
+        max-width: 730px;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .footer-content svg {
+        width: 160px;
+        height: 58px;
+    }
+
+    .footer-description {
+        max-width: 26.875rem;
+    }
+
+}
+
