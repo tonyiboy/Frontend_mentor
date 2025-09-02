@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global settings */
+
+@font-face {
+    font-family: "outfit";
+    src: url(./fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "big shoulders";
+    src: url(./fonts/big_shoulders/BigShoulders-VariableFont_opsz\,wght.ttf) format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/********** HEADER **********/
+/********** HEADER **********/
+/********** HEADER **********/
+
+header {    
+    max-width: 23.4375rem;
+    margin: auto;
+    position: relative;
+}
+
+/* link and svg wrapper */
+.location {
+    display: flex;
+    position: absolute;
+    top: 0.625rem;
+    left: 0.625rem;
+}
+
+/* link to location page */
+.location a {
+    background-color: #151515;
+    color: white;
+    text-decoration: none;
+    font-family: "big shoulders";
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.2275rem;
+    padding: 1.3em 1.25em;
+    text-transform: uppercase;
+
+}
+
+/* svg wrapper */
+.location-svg-wrapper {
+    background-color: #D5966C;
+    padding: 1.5em 1.438rem;      
+}
+
+/* svg */
+svg {
+    display: block;
+}
+
+/********** MAIN **********/
+/********** MAIN **********/
+/********** MAIN **********/
+
+main {
+    background-color: #151515;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 23.4375rem;
+    margin: auto;
+}
+
+.main-title {
+    font-family: "big shoulders";
+    font-size: 3.4375rem;
+    color: white;
+    font-weight: 900;
+    line-height: 90%;
+    text-transform: uppercase;
+
+}
+
+.wrapper-title {
+    font-family: "big shoulders";
+    color: #D5966C;
+    font-size: 2.25rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    font-weight: 900;
+}
+
+.address-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.address-info span {
+    color: white;
+    font-family: outfit;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+main p {
+    color: white;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 140%;
+}
+
+/********** FOOTER **********/
+/********** FOOTER **********/
+/********** FOOTER **********/
+
+footer {
+    max-width: 23.4375rem;
+    margin: auto;
+    background-color: #D5966C;
+    padding: 3rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-content p {
+    font-family: outfit;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 140%;
+    color: #151515;
+}
+
+.svgs-wrapper {
+    display: flex;
+    gap: 1.25rem;
+}
+
+footer svg {
+    fill: #151515;
+}
+
+/********** HOVER **********/
+/********** HOVER **********/
+/********** HOVER **********/
+footer svg:hover {
+    fill: #FFF;
+    cursor: pointer;
+}
+
+.location:hover a {
+    background-color: #D5966C;
+}
+
+.location:hover .location-svg-wrapper {
+    background-color: #151515;
+}
+
+/********** TABLET VERSION **********/
+/********** TABLET VERSION **********/
+/********** TABLET VERSION **********/
+
+@media (min-width: 768px) {
+
+    /********** HEADER **********/
+
+    header {
+        max-width: 48rem;
+    }
+
+    .location {
+        top: 1rem;
+        left: 2.4375rem;
+    }
+
+    /********** MAIN **********/
+
+    main {
+        max-width: 48rem;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        padding-inline: 2.5rem;
+    }
+
+    .main-title {
+        max-width: 13.9375rem;
+    }
+
+    .content-wrapper {
+        max-width: 24.875rem;
+    }
+
+    /********** FOOTER **********/
+
+    footer {
+        max-width: 48rem;
+        padding-inline: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        max-width: 28.125rem;
+        gap: 4rem;
+        margin-bottom: 0;
+    }
+
+    .footer-content svg {
+        flex-shrink: 0;
+    }
+
+}
+
+/********** DESKTOP VERSION **********/
+/********** DESKTOP VERSION **********/
+/********** DESKTOP VERSION **********/
+
+@media (min-width: 1440px) {
+
+     /********** HEADER **********/
+
+    header {
+        max-width: 90rem;
+    }
+
+    .location {
+        left: 9.75rem;
+    }
+
+    /********** MAIN **********/
+
+    main {
+        max-width: 90rem;
+        padding: 8.125rem 10.3125rem;
+    }
+
+    .main-title {
+        font-size: 4.375rem;
+        line-height: 100%;
+    }
+
+    .content-wrapper {
+        max-width: 33.75rem;
+    }
+
+    .wrapper-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .address-info {
+        margin-bottom: 2rem;
+    }
+
+    .address-info span {
+       font-size: 1.375rem;
+    }
+
+    main p {
+        font-size: 1.375rem;
+    }
+
+    /********** FOOTER **********/
+
+    footer {
+        max-width: 90rem;
+        padding: 5rem 10.3125rem;
+    }
+
+    .footer-content {
+        max-width: 45.625rem;
+        gap: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-content p {
+        max-width: 26.875rem;
+    }
+
+}
