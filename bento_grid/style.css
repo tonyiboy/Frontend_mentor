@@ -1,0 +1,416 @@
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "sans";
+    src: url("./fonts/DMSans-VariableFont_opsz\,wght.ttf") format("truetype");
+}
+
+main {
+    padding: 2rem 1rem 0;
+    display: grid;
+    gap: 2rem;
+    max-width: 1120px;
+    margin-inline: auto;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight";
+}
+
+body {
+    font-family: "sans";
+    background-color: #F6F5F6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+div {
+    border-radius: 0.625rem;;
+}
+
+/* CARD ONE */
+
+.card-one {
+    background-color: #7551DC;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: one;
+}
+
+h1 {
+    font-weight: 500;
+    color: white;
+    font-size: 2.875rem;
+    text-align: center;
+    letter-spacing: -0-04rem;
+    line-height: 91.3%;
+    margin-bottom: 0.5rem;
+}
+
+.card-one img {
+    margin-bottom: 0.5rem;
+    max-width: 192px;
+    margin-inline: auto;
+}
+
+h1 span {
+    color: #FFCC6A;
+}
+
+.card-one p {
+    color: white;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+/* CARD TWO  */
+
+.card-two {
+    padding: 1rem;
+    background-color: white;
+    grid-area: two;
+}
+
+.card-two img {
+    margin-bottom: 1rem;
+    border-radius: 2.125rem;
+}
+
+.card-two h2 {
+    color: #121212;
+    font-weight: 500;
+    font-size: 1.625rem;
+    letter-spacing: -0.06em;
+    line-height: 92.3%;   
+}
+
+/* CARD THREE */
+.card-three {
+    background-color: #FFCC6A;
+    padding: 1rem;
+    grid-area: three;
+    overflow: hidden;
+}
+
+.card-three h2 {
+    color: #121212;
+    font-weight: 500;
+    font-size: 1.625rem;
+    letter-spacing: -0.06em;
+    line-height: 92.3%;
+    margin-bottom: 1rem; 
+}
+
+.card-three img{
+    margin-bottom: -60px;
+}
+
+/* CARD FOUR */
+.card-four {
+    padding: 2rem;
+    background-color: #DBD1FC;
+    grid-area: four;
+}
+
+.card-four h2 {
+    color: #121212;
+    font-weight: 500;
+    font-size: 1.625rem;
+    letter-spacing: -0.06em;
+    line-height: 92.3%;
+    margin-bottom: 1.5rem;
+}
+
+.card-four img {
+    margin-bottom: 1.5rem;
+}
+
+.card-four p {
+    color: #121212;
+    font-size: 1.125rem;
+    line-height: 111.1%;
+    text-align: center;
+}
+
+/* CARD FIVE */
+.card-five {
+    background-color: #7551DC;
+    padding: 1.5rem;
+    grid-area: five;
+}
+
+.card-five img{
+    margin-bottom: 2.5rem;
+}
+
+.card-five h2{
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 87.5%;
+    letter-spacing: -0.06em;
+}
+
+/* CARD SIX */
+.card-six {
+    background-color: white;
+    grid-area: six;
+    padding: 1.5rem;
+}
+
+.card-six span {
+    font-size: 2.875rem;
+    font-weight: 500;
+    line-height: 91.3%;
+    letter-spacing: -0.04em;
+    margin-bottom: 0.9375rem;
+    display: block;
+}
+
+.card-six p {
+    font-size: 1.125rem;
+    color: #121212;
+    line-height: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* CARD SEVEN */
+.card-seven {
+    background-color: #F9EEE2;
+    padding: 2rem;
+    grid-area: seven;
+}
+
+.card-seven h2 {
+    font-size: 2rem;
+    line-height: 87.5%;
+    letter-spacing: -0.06em;
+    color: #121212;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.card-seven h2 span {
+    color: #7551DC;
+    font-style: italic;
+}
+
+/* CARD-EIGHT */
+.card-eight {
+    background-color: #FFCC6A;
+    padding: 2rem;
+    grid-area: eight;
+}
+
+.card-eight h2 {
+    font-size: 2rem;
+    line-height: 87.5%;
+    letter-spacing: -0.06em;
+    color: #121212;
+    font-weight: 500;
+}
+
+/********** TABLET VERSION  **********/
+/********** TABLET VERSION  **********/
+/********** TABLET VERSION  **********/
+
+@media (min-width:768px) {
+
+    main {
+    padding: 3.25rem 2.5rem 0;
+    grid-template-areas: 
+    "one one"
+    "two three"
+    "four four"
+    "five five"
+    "six six"
+    "seven eight";
+    }
+
+    /* CARD ONE */
+      h1 {
+        font-size: 3.375rem;
+        line-height: 88.9%;
+    }
+
+    /* CARD TWO */
+     .card-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .card-two h2 {
+        font-size: 1.75rem;
+        letter-spacing: -0.06em;
+        line-height: 100%;   
+    }
+
+    .card-two img {
+        margin-bottom: 1rem;
+   }
+
+    /* CARD THREE */
+   
+    .card-three h2 {
+        font-size: 1.75rem;  
+    }
+
+    .card-three img{
+        margin-bottom: -20px;
+    }
+
+    /* CARD FOUR */
+    .card-four h2 {
+        font-size: 1.75rem;  
+    }
+
+    /* CARD FIVE */
+    .card-five h2{
+        font-size: 2.25rem;
+    }
+    
+    /* CARD SIX */
+    .card-six span {
+        font-size: 3.375rem;
+    }
+
+    /* CARD SEVEN */
+    .card-seven h2 {
+        font-size: 2.25rem;
+    }
+}
+
+/********** DESKTOP VERSION **********/
+/********** DESKTOP VERSION **********/
+/********** DESKTOP VERSION **********/
+
+@media (min-width: 1440px) {
+
+    main {
+        padding: 83px 0 0;
+        grid-template-columns: 256px 256px 256px 256px;
+        grid-template-areas: 
+        "seven one one four"
+        "seven two three four"
+        "eight two three four"
+        "eight six five five";
+    }
+    
+    /* CARD ONE */
+    h1 {
+        font-size: 3.875rem;
+        line-height: 93.5%;
+    }
+
+    /* CARD TWO */
+    .card-two {
+        padding: 24px;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .card-two img {
+        margin-bottom: 0;
+        max-width: none;
+        width: 150%;
+    }
+
+    .card-two h2 {
+        font-size: 2rem;
+        letter-spacing: -0.06em;
+        line-height: 87.5%;   
+    }
+
+    /* CARD THREE */
+    .card-three h2 {
+        font-size: 2rem; 
+        padding-right: 20px; 
+    }  
+    
+    .card-three img {
+        margin-bottom: -100px;
+    }
+
+    /* CARD FOUR */
+    .card-four {
+        display: grid;
+        overflow: hidden;
+    }
+
+    .card-four img {
+        max-width: 180%;
+    }
+
+    .card-four h2 {
+        font-size: 2rem;  
+    }
+
+    .card-four p {
+        text-align: left;
+    }
+
+    /* CARD FIVE */
+    .card-five {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .card-five img {
+        margin-bottom: 0px;
+    }
+
+    .card-five h2{
+        font-size: 2.5rem;
+    }
+    
+    /* CARD SIX */
+    .card-six {
+        display: grid;
+    }
+
+    .card-six span {
+        font-size: 3.875rem;
+    }
+
+    .card-six img {
+       align-self: end;
+    }
+
+    /* CARD SEVEN */
+    .card-seven {
+        padding-block: 0;
+        display: grid;
+        align-content: center;
+    }
+
+     .card-seven h2 {
+        font-size: 2.5rem;
+    }
+
+    /* CARD EIGHT */
+    .card-eight {
+        display: grid;
+        align-content: space-between;
+    }
+
+    .card-eight h2 {
+        font-size: 2.5rem;
+    }
+}
